@@ -1,0 +1,140 @@
+/* header style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+body{
+    font-family: Poppins;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffff;
+}
+.head ,.section1, .section3{
+    display: grid;
+     grid-template-columns: repeat(2,1fr); 
+   
+}
+.head-menu>ul{
+    display: flex;
+}
+.head-menu>ul>li{
+    list-style: none;
+    padding-left: 40px;
+}
+.head-title{
+    font-size: 24px;
+}
+ /* section style */
+.container, .head{
+    background-color: #ffff;
+    width: 1300px;
+    padding-left: 30px;
+}
+#cam{
+    padding-left: 10%;
+    height: 440px;
+    width: 414px;
+
+}
+.section1-header{
+    padding-top: 10%;
+}
+button{
+    height: 30px;
+    width: 140px;
+    background-color:#E02C6D;
+    color: aliceblue;
+    border: 1px solid white;
+    border-radius: 41px;
+}
+
+.section2-header{
+    font-size: 20px;
+     padding-left: 5%; 
+
+}
+.info{
+    font-size: 10px;
+    padding-left: 6%;
+}
+.mega{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.section2{
+ height: 435px;
+width: 300px;
+border: 1px solid rgb(228, 222, 222);
+border-radius: 7px;
+margin-bottom: 30px;
+box-shadow:5px 5px 12px 12px rgba(197, 197, 245, 0.2);;
+
+}
+#cams{
+    height: 220px;
+    width: 280px;
+    padding-left: 10px;
+    padding-top: 7px;
+
+}
+#icon{
+    color: rgb(241, 118, 30);
+}
+.see{
+    color: #E02C6D;
+    text-decoration: none;
+    margin-left: 80%;
+    margin-top: 30px;
+    font-size: 20px;
+}
+#cam2{
+    height: 300px;
+    width: 400px;
+}
+.section3-header{
+    margin-right: 100px;
+}
+/* footer style */
+.finisher{
+    text-align: center;
+    background-color: rgb(2, 2, 10);
+    color: white;
+    width: 1300px;
+}
+.logo{
+    padding-right: 10px;
+}
+/* media-query start */
+@media (max-width:688px){
+   .container{
+        width: 100%;
+        /* background-color: blue; */
+    } 
+    .mega, .head, .section1, .section3{
+
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+    .finisher{
+       text-align: justify;
+    }
+}
+    @media (min-width:689px) and (max-width:992px) {
+        .container{
+        width: 100%; 
+    } 
+    .mega, .head, .section1, .section3{
+
+        grid-template-columns: repeat(2,1fr);
+       
+    }
+    .finisher{
+       text-align: justify;
+    }
+}
+/* media query end */
+        
+        
+    
+    
+    
+
+
